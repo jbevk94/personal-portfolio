@@ -1,77 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-section{
-    padding: 100px;
+section {
+  padding: 100px;
 }
 
-.banner{
-    position: relative;
-   background: url(img/woods.jpg);
-   background-size: cover;
-   background-position: right;
-   min-height: 100vh;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   color: #fff;
-   
+.banner {
+  position: relative;
+  background: url(img/woods.jpg);
+  background-size: cover;
+  background-position: right;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
 }
 
-.banner h2{
-    font-size: 5em;
-    font-weight: 700;
-    line-height: 1.5;
+/* .banner h2 {
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
-.banner h3{
-    font-size: 2em;
-    font-weight: 400;   
-}
+.banner h3 {
+  font-size: 2em;
+  font-weight: 400;
+} */
 
-.banner h2, .banner h3{
- 
-    left: 50%;
-    text-shadow: 2px 2px black;
+/* .banner h2,
+.banner h3 {
+  left: 50%;
+  text-shadow: 2px 2px black;
 }
-.banner h2, .banner h3, .btn{
-    position: relative;
-    left: 50%;
-    text-align: center;
-}
-.btn{
-    position: relative;
-    background: yellow;
-    display: block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    
+.banner h2,
+.banner h3,
+.btn {
+  position: relative;
+  left: 50%;
+  text-align: center;
+} */
+.btn {
+  position: relative;
+  background: #15d9f2;
+  color: #fff;
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-    background-color: rgb(255, 255, 255);
-     opacity: 0.9;
-     height: 15%;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background-color: #111;
+  /* opacity: 0.9; */
+  height: 15%;
+}
 header.sticky {
   background: #fff;
   padding: 20px 100px;
@@ -79,88 +80,357 @@ header.sticky {
 }
 
 header .logo {
-    color: #111;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
-  }
-  .header,
-  .sticky .logo {
-    color: #111;
-  }
-  
-  header ul {
-    position: relative;
-    display: flex;
-  }
-  
-  header ul li {
-    position: relative;
-    list-style: none;
-  }
-  
-  header ul li a {
-    position: relative;
-    display: inline-block;
-    margin: 0 15px;
-    color: #111;
-    text-decoration: none;
-  }
-  
-  .header,
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.header,
+.sticky .logo {
+  color: #111;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #111;
+  text-decoration: none;
+}
+
+.header,
 .sticky ul li a {
   color: #111;
 }
 
 .heading {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #111;
-  }
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #15d9f2;
+}
+
+.heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentBx {
+  padding-right: 30px;
+}
+
+.contentBx h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.w50 {
+  min-height: 50%;
+}
+
+.about img {
+  max-width: 45%;
+  /* border-radius: 60px; */
+  /* float: right; */
   
+}
+.project img {
+  cursor: pointer;
+}
+.project .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project .content .projectBx {
+  width: 50%;
+  padding: 20px;
+}
+
+.project .content .projectBx img {
+  max-width: 100%;
+  box-shadow: 20px 20px #15d9f2;
+  margin-bottom: 20px;
+}
+
+.contact {
+  background: #111;
+}
+
+.formBx {
+  min-width: 60%;
+}
+
+.formBx form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3 {
+  color: #fff;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.formBx form input,
+.formBx form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+}
+
+.formBx form textarea {
+  min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+  color: #999;
+}
+
+.formBx form input[type="submit"] {
+  max-width: 100px;
+  background: #15d9f2;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contactInfo {
+  min-width: 40%;
+}
+
+.contactInfoBx {
+  position: relative;
+}
+
+.contactInfoBx .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactInfoBx .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+  font-weight: 500;
+  color: #15d9f2;
+  margin-bottom: 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 991px) and (min-width: 300px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #15d9f2;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+  header ul li a {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active {
+    background: url(img/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  header.sticky .toggle {
+    filter: invert(1);
+  }
+  section {
+    padding: 100px 50px;
+  }
+  /* .banner {
+    padding: 150px 50px 100px;
+    text-align: right;
+  }
+  .banner h2 {
+    font-size: 1.5em;
+  }
+  .banner h3 {
+    font-size: 1em;
+  } */
+
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .heading .btn {
+    left: 0;
+  }
   .heading h2 {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 24px;
+  }
+
+  .contentBx h3 {
+    font-size: 20px;
   }
 
   .content {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
-  
-  .contentBx {
-    padding-right: 30px;
+  .w50 {
+    margin-bottom: 20px;
   }
-  
-  .contentBx h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .services .content .servicesBx {
+    margin: 10px;
+  }
+  .work .content .workBx {
+    width: 100%;
+    padding: 10px;
+  }
+  .testimonial .content .testimonialBx {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 10px;
+    background: #15d9f2;
+  }
+  .testimonial .content .testimonialBx h3 {
+    margin-top: 20px;
+  }
+  .contactInfo,
+  form h3 {
+    margin: 20px 0;
+  }
+  .services .content .servicesBx {
+    max-width: 520px;
+  }
+  .services .content .servicesBx img {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  header.sticky {
+    padding: 20px 20px;
   }
 
-  .w50 {
-    min-height: 50%;
+  .textBx{
+     text-align: center; 
+     width: 100%;
   }
-  
-  .about img {
-    max-width: 45%;
-    border-radius: 60px;
-    float: right;
-    align-self: center;
+.banner h2{
+    font-size: 2rem;
+    text-shadow: 4px 2px #111;
+}
+.banner h3{
+    font-size: 1.5rem;
+    text-shadow: 4px 2px #111;
+}
+
+.questions{
+    line-height: 2rem;
+    display: inline-block;
+}
+.about{
+    width: 100%;
+}
+ .about img{
+    max-width: 70%;
+    margin-left: 20%;
+    margin-right: 15%;
+    border-radius: 20px;
+ }
+
+  .banner h2 {
+    
+    line-height: 2em;
   }
-  
-  .project .content {
-    display: flex;
-    justify-content: space-between;
+
+  section {
+    padding: 40px 20px;
   }
-  
+
+  .services .content .servicesBx img {
+    max-width: 300px;
+  }
+ 
   .project .content .projectBx {
-    width: 50%;
-    padding: 20px;
+ width: 100%;
   }
-  
-  .project .content .projectBx img {
-    max-width: 100%;
+  .projectBx span{
+      display: block;
+      text-align: center;
   }
+}
